@@ -30,11 +30,17 @@ echo $usuario;*/
 $aluno->insert();
 echo $aluno;*/
 
+//Alterar um usuario
+/*$usuario = new Usuario();
+$usuario->loadById(13);
+$usuario->update("professor", "minhasenha");
+echo $usuario;*/
+
 $usuario = new Usuario();
 
-$usuario->loadById(13);
+$usuario->loadById(14);
 
-$usuario->update("professor", "minhasenha");
+$usuario->delete();
 
 echo $usuario;
 /*$sql = new Sql();
