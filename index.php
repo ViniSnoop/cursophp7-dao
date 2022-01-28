@@ -20,14 +20,24 @@ echo json_encode($search);*/
 
 //Carrega um usuario usando o login e a senha 
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("root", "123456");
+echo $usuario;*/
+
+//Criando um novo usuario
+
+/*$aluno = new Usuario("aluno", "@lun0");
+$aluno->insert();
+echo $aluno;*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(13);
+
+$usuario->update("professor", "minhasenha");
 
 echo $usuario;
-
-/*
-$sql = new Sql();
+/*$sql = new Sql();
 $usuarios = $sql->select("SELECT * FROM tb_usuarios");
-echo json_encode($usuarios);
-*/
+echo json_encode($usuarios);*/
 ?>
