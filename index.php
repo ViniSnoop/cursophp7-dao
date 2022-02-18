@@ -43,6 +43,8 @@ $usuario->loadById(14);
 $usuario->delete();
 
 echo $usuario;
+
+echo $usuario;
 /*$sql = new Sql();
 $usuarios = $sql->select("SELECT * FROM tb_usuarios");
 echo json_encode($usuarios);*/
